@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C9C1CCC170FE5C3003E19B9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9C1CCB170FE5C3003E19B9 /* SenTestingKit.framework */; };
+		2C9C1CCE170FE5C3003E19B9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9C1CCD170FE5C3003E19B9 /* Cocoa.framework */; };
+		2C9C1CDB170FE5C3003E19B9 /* STSettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C1CDA170FE5C3003E19B9 /* STSettingsTests.m */; };
+		2C9C1CE1170FE764003E19B9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C9C1CE0170FE764003E19B9 /* Settings.bundle */; };
+		2C9C1CE2170FE777003E19B9 /* STSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD07B2C170C24BA00ACEDF8 /* STSettings.m */; };
 		2CD07B2B170C24BA00ACEDF8 /* STSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CD07B2A170C24BA00ACEDF8 /* STSettings.h */; };
 		2CD07B2D170C24BA00ACEDF8 /* STSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD07B2C170C24BA00ACEDF8 /* STSettings.m */; };
 /* End PBXBuildFile section */
@@ -25,16 +30,61 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C9C1CC9170FE5C3003E19B9 /* STSettingsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STSettingsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9C1CCB170FE5C3003E19B9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2C9C1CCD170FE5C3003E19B9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2C9C1CD0170FE5C3003E19B9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2C9C1CD2170FE5C3003E19B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C9C1CD5170FE5C3003E19B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9C1CD9170FE5C3003E19B9 /* STSettingsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSettingsTests.h; sourceTree = "<group>"; };
+		2C9C1CDA170FE5C3003E19B9 /* STSettingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSettingsTests.m; sourceTree = "<group>"; };
+		2C9C1CE0170FE764003E19B9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2CD07B25170C24B900ACEDF8 /* libSTSettings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTSettings.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD07B2A170C24BA00ACEDF8 /* STSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSettings.h; sourceTree = "<group>"; };
 		2CD07B2C170C24BA00ACEDF8 /* STSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSettings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		2C9C1CC5170FE5C3003E19B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9C1CCC170FE5C3003E19B9 /* SenTestingKit.framework in Frameworks */,
+				2C9C1CCE170FE5C3003E19B9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		2C9C1CCA170FE5C3003E19B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C9C1CD2170FE5C3003E19B9 /* Foundation.framework */,
+				2C9C1CCD170FE5C3003E19B9 /* Cocoa.framework */,
+				2C9C1CD0170FE5C3003E19B9 /* AppKit.framework */,
+				2C9C1CCB170FE5C3003E19B9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C9C1CD3170FE5C3003E19B9 /* STSettingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C9C1CD5170FE5C3003E19B9 /* Info.plist */,
+				2C9C1CD9170FE5C3003E19B9 /* STSettingsTests.h */,
+				2C9C1CDA170FE5C3003E19B9 /* STSettingsTests.m */,
+				2C9C1CE0170FE764003E19B9 /* Settings.bundle */,
+			);
+			path = STSettingsTests;
+			sourceTree = "<group>";
+		};
 		2CD07AF3170C232200ACEDF8 = {
 			isa = PBXGroup;
 			children = (
 				2CD07B27170C24BA00ACEDF8 /* STSettings */,
+				2C9C1CD3170FE5C3003E19B9 /* STSettingsTests */,
+				2C9C1CCA170FE5C3003E19B9 /* Frameworks */,
 				2CD07AFD170C232200ACEDF8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD07B25170C24B900ACEDF8 /* libSTSettings.a */,
+				2C9C1CC9170FE5C3003E19B9 /* STSettingsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +110,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2C9C1CC8170FE5C3003E19B9 /* STSettingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C9C1CDF170FE5C3003E19B9 /* Build configuration list for PBXNativeTarget "STSettingsTests" */;
+			buildPhases = (
+				2C9C1CC4170FE5C3003E19B9 /* Sources */,
+				2C9C1CC5170FE5C3003E19B9 /* Frameworks */,
+				2C9C1CC6170FE5C3003E19B9 /* Resources */,
+				2C9C1CC7170FE5C3003E19B9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STSettingsTests;
+			productName = STSettingsTests;
+			productReference = 2C9C1CC9170FE5C3003E19B9 /* STSettingsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		2CD07B24170C24B900ACEDF8 /* STSettings */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CD07B2E170C24BA00ACEDF8 /* Build configuration list for PBXNativeTarget "STSettings" */;
@@ -98,11 +167,48 @@
 			projectRoot = "";
 			targets = (
 				2CD07B24170C24B900ACEDF8 /* STSettings */,
+				2C9C1CC8170FE5C3003E19B9 /* STSettingsTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2C9C1CC6170FE5C3003E19B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9C1CE1170FE764003E19B9 /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C9C1CC7170FE5C3003E19B9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2C9C1CC4170FE5C3003E19B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9C1CDB170FE5C3003E19B9 /* STSettingsTests.m in Sources */,
+				2C9C1CE2170FE777003E19B9 /* STSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CD07B21170C24B900ACEDF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +220,37 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2C9C1CDD170FE5C3003E19B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = STSettingsTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2C9C1CDE170FE5C3003E19B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = STSettingsTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		2CD07B17170C232200ACEDF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -126,9 +263,9 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -138,16 +275,13 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -163,22 +297,19 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -186,9 +317,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/STSettings.dst;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -196,15 +330,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/STSettings.dst;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C9C1CDF170FE5C3003E19B9 /* Build configuration list for PBXNativeTarget "STSettingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9C1CDD170FE5C3003E19B9 /* Debug */,
+				2C9C1CDE170FE5C3003E19B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		2CD07AF7170C232200ACEDF8 /* Build configuration list for PBXProject "STSettings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
