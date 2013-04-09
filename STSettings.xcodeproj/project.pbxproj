@@ -7,16 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C78C40E17142F74001530CC /* STSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD07B2C170C24BA00ACEDF8 /* STSettings.m */; };
 		2C9C1CCC170FE5C3003E19B9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9C1CCB170FE5C3003E19B9 /* SenTestingKit.framework */; };
-		2C9C1CCE170FE5C3003E19B9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9C1CCD170FE5C3003E19B9 /* Cocoa.framework */; };
 		2C9C1CDB170FE5C3003E19B9 /* STSettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C1CDA170FE5C3003E19B9 /* STSettingsTests.m */; };
 		2C9C1CE1170FE764003E19B9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C9C1CE0170FE764003E19B9 /* Settings.bundle */; };
 		2C9C1CE2170FE777003E19B9 /* STSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD07B2C170C24BA00ACEDF8 /* STSettings.m */; };
+		2C9C1CF8170FECD6003E19B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9C1CD2170FE5C3003E19B9 /* Foundation.framework */; };
+		2C9C1CFB170FECD6003E19B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C1CFA170FECD6003E19B9 /* main.m */; };
+		2C9C1E4217118F3E003E19B9 /* STSettingsLinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C1E4117118F3E003E19B9 /* STSettingsLinter.m */; };
+		2C9C1E43171192CA003E19B9 /* STSettingsLinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C1E4117118F3E003E19B9 /* STSettingsLinter.m */; };
 		2CD07B2B170C24BA00ACEDF8 /* STSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CD07B2A170C24BA00ACEDF8 /* STSettings.h */; };
 		2CD07B2D170C24BA00ACEDF8 /* STSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD07B2C170C24BA00ACEDF8 /* STSettings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2C9C1CF5170FECD6003E19B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		2CD07B23170C24B900ACEDF8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -30,15 +43,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C78C40D17142E43001530CC /* STSettings+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STSettings+Internal.h"; sourceTree = "<group>"; };
 		2C9C1CC9170FE5C3003E19B9 /* STSettingsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STSettingsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9C1CCB170FE5C3003E19B9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		2C9C1CCD170FE5C3003E19B9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		2C9C1CD0170FE5C3003E19B9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2C9C1CD2170FE5C3003E19B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C9C1CD5170FE5C3003E19B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C9C1CD9170FE5C3003E19B9 /* STSettingsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSettingsTests.h; sourceTree = "<group>"; };
 		2C9C1CDA170FE5C3003E19B9 /* STSettingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSettingsTests.m; sourceTree = "<group>"; };
 		2C9C1CE0170FE764003E19B9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2C9C1CF7170FECD6003E19B9 /* STSettingsLint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = STSettingsLint; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9C1CFA170FECD6003E19B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C9C1E4017118F3E003E19B9 /* STSettingsLinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingsLinter.h; sourceTree = "<group>"; };
+		2C9C1E4117118F3E003E19B9 /* STSettingsLinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingsLinter.m; sourceTree = "<group>"; };
 		2CD07B25170C24B900ACEDF8 /* libSTSettings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTSettings.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD07B2A170C24BA00ACEDF8 /* STSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSettings.h; sourceTree = "<group>"; };
 		2CD07B2C170C24BA00ACEDF8 /* STSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSettings.m; sourceTree = "<group>"; };
@@ -50,7 +66,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C9C1CCC170FE5C3003E19B9 /* SenTestingKit.framework in Frameworks */,
-				2C9C1CCE170FE5C3003E19B9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C9C1CF4170FECD6003E19B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9C1CF8170FECD6003E19B9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				2C9C1CD2170FE5C3003E19B9 /* Foundation.framework */,
-				2C9C1CCD170FE5C3003E19B9 /* Cocoa.framework */,
-				2C9C1CD0170FE5C3003E19B9 /* AppKit.framework */,
 				2C9C1CCB170FE5C3003E19B9 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
@@ -79,11 +100,20 @@
 			path = STSettingsTests;
 			sourceTree = "<group>";
 		};
+		2C9C1CF9170FECD6003E19B9 /* STSettingsLint */ = {
+			isa = PBXGroup;
+			children = (
+				2C9C1CFA170FECD6003E19B9 /* main.m */,
+			);
+			path = STSettingsLint;
+			sourceTree = "<group>";
+		};
 		2CD07AF3170C232200ACEDF8 = {
 			isa = PBXGroup;
 			children = (
 				2CD07B27170C24BA00ACEDF8 /* STSettings */,
 				2C9C1CD3170FE5C3003E19B9 /* STSettingsTests */,
+				2C9C1CF9170FECD6003E19B9 /* STSettingsLint */,
 				2C9C1CCA170FE5C3003E19B9 /* Frameworks */,
 				2CD07AFD170C232200ACEDF8 /* Products */,
 			);
@@ -94,6 +124,7 @@
 			children = (
 				2CD07B25170C24B900ACEDF8 /* libSTSettings.a */,
 				2C9C1CC9170FE5C3003E19B9 /* STSettingsTests.octest */,
+				2C9C1CF7170FECD6003E19B9 /* STSettingsLint */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				2CD07B2A170C24BA00ACEDF8 /* STSettings.h */,
+				2C78C40D17142E43001530CC /* STSettings+Internal.h */,
 				2CD07B2C170C24BA00ACEDF8 /* STSettings.m */,
+				2C9C1E4017118F3E003E19B9 /* STSettingsLinter.h */,
+				2C9C1E4117118F3E003E19B9 /* STSettingsLinter.m */,
 			);
 			path = STSettings;
 			sourceTree = "<group>";
@@ -127,6 +161,23 @@
 			productName = STSettingsTests;
 			productReference = 2C9C1CC9170FE5C3003E19B9 /* STSettingsTests.octest */;
 			productType = "com.apple.product-type.bundle";
+		};
+		2C9C1CF6170FECD6003E19B9 /* STSettingsLint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C9C1D00170FECD6003E19B9 /* Build configuration list for PBXNativeTarget "STSettingsLint" */;
+			buildPhases = (
+				2C9C1CF3170FECD6003E19B9 /* Sources */,
+				2C9C1CF4170FECD6003E19B9 /* Frameworks */,
+				2C9C1CF5170FECD6003E19B9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STSettingsLint;
+			productName = STSettingsLint;
+			productReference = 2C9C1CF7170FECD6003E19B9 /* STSettingsLint */;
+			productType = "com.apple.product-type.tool";
 		};
 		2CD07B24170C24B900ACEDF8 /* STSettings */ = {
 			isa = PBXNativeTarget;
@@ -168,6 +219,7 @@
 			targets = (
 				2CD07B24170C24B900ACEDF8 /* STSettings */,
 				2C9C1CC8170FE5C3003E19B9 /* STSettingsTests */,
+				2C9C1CF6170FECD6003E19B9 /* STSettingsLint */,
 			);
 		};
 /* End PBXProject section */
@@ -209,11 +261,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C9C1CF3170FECD6003E19B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9C1CFB170FECD6003E19B9 /* main.m in Sources */,
+				2C9C1E43171192CA003E19B9 /* STSettingsLinter.m in Sources */,
+				2C78C40E17142F74001530CC /* STSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CD07B21170C24B900ACEDF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2CD07B2D170C24BA00ACEDF8 /* STSettings.m in Sources */,
+				2C9C1E4217118F3E003E19B9 /* STSettingsLinter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +311,28 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		2C9C1D01170FECD6003E19B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C9C1D02170FECD6003E19B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -349,6 +434,16 @@
 				2C9C1CDE170FE5C3003E19B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C9C1D00170FECD6003E19B9 /* Build configuration list for PBXNativeTarget "STSettingsLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C9C1D01170FECD6003E19B9 /* Debug */,
+				2C9C1D02170FECD6003E19B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CD07AF7170C232200ACEDF8 /* Build configuration list for PBXProject "STSettings" */ = {
 			isa = XCConfigurationList;

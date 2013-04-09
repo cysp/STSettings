@@ -1,16 +1,10 @@
 //  Copyright (c) 2013 Scott Talbot. All rights reserved.
 
 #import "STSettings.h"
+#import "STSettings+Internal.h"
 
 
-typedef NS_ENUM(NSUInteger, STSettingsPreferenceType) {
-	STSettingsPreferenceTypeUnknown = 0,
-	STSettingsPreferenceTypeIgnorable,
-	STSettingsPreferenceTypePreference,
-	STSettingsPreferenceTypeLink,
-};
-
-static STSettingsPreferenceType STSettingsPreferenceTypeFromTypeString(NSString *string) {
+STSettingsPreferenceType STSettingsPreferenceTypeFromTypeString(NSString *string) {
 	if ([@"PSGroupSpecifier" isEqualToString:string]) {
 		return STSettingsPreferenceTypeIgnorable;
 	}
